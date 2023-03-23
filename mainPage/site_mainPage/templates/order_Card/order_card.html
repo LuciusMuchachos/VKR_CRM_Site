@@ -1,0 +1,63 @@
+{% load static %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/order_card/order_card.css' %}" />
+  <script type="text/javascript" src="{% static 'js/open_card.js' %}"></script>
+<div class="form-popup" id="order_Form">
+<div style="display: flex; flex: row;justify-content: space-between;">
+  <header>
+  Заказ № {{ item }}
+    </header>
+  <div style="cursor: pointer" onclick="closeForm()">
+    <header>
+      X
+    </header>
+  </div>
+</div>
+  <div style="
+      margin-top: 2%;
+      margin-left: auto;
+      margin-right: auto;
+      border: 6px solid #50f492;
+    ">
+    <div class="textcols">
+      <div class="textcols-item" style="text-align: right;">
+        <p class="p_text">
+          Дата публикации: <input type="text" class="input_text" />
+        </p>
+        <p class="p_text">
+          Автор публикации: <input type="text" class="input_text" />
+        </p>
+        <p class="p_text">Ссылка: <input type="text" class="input_text" /></p>
+      </div>
+      <div class="textcols-item" style="text-align: right;">
+        <p class="p_text">
+          Исполнитель:
+          <select class="input_text">
+            <option>Пункт 1</option>
+            <option>Пункт 2</option>
+          </select>
+        </p>
+        <p class="p_text">
+          Статус заказа:
+          <select class="input_text">
+            <option>Пункт 1</option>
+            <option>Пункт 2</option>
+          </select>
+        </p>
+      </div>
+    </div>
+    <div class="panel_holder">
+    <div class="order_panel">
+      Текст заказа
+      </div>
+      <div class="order_panel">
+      Комментарии
+      </div>
+      <div class="order_panel">
+      Учёт времени
+      </div>
+    </div>
+      <textarea class="inner_text_of_order">
+      </textarea>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+{% load static %}
+{% load holder %}
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{% static 'css/kanban_desk/desk.css' %}" />
+    <script type="text/javascript" src="{% static 'js/open_card.js' %}"></script>
+</head>
+<div class="group_body">
+            <h2 class="header_h">
+                {{item}}
+            </h2>
+    <div class="card_handler" onclick="openForm()">
+        {% for card in order_Cards %}
+            {% include "kanban_desk/card.html" %}
+        {% endfor %}
+    </div>
+ </div>

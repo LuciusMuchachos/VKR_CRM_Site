@@ -1,0 +1,93 @@
+.border
+{
+    display: flex;
+    flex: row;
+    overflow: hidden;
+    text-align: justify;
+    border: 6px solid #50F492;
+    width: 94%;
+    height: 810px;
+}
+
+.cards
+{
+    color: #828282;
+    display: flex;
+    flex: row;
+}
+
+h1
+{
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 35px;
+    /* or 97% */
+
+    text-transform: uppercase;
+
+    color: #62DB92;
+}
+
+.page_borders
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+    background: #50F492;
+    border-radius: 0px 50px 0px 0px;
+    padding: 5px 10px;
+}
+
+.page_borders:hover
+{   cursor: pointer;
+    background: rgba(80, 244, 146, 0.4);
+    color: white;
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* 4px scroll thumb. 10px margin from right margin */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 14px 14px transparent;
+  border: solid 4px transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 14px 14px #50F492;
+  border: solid 4px transparent;
+  border-radius: 14px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+.avatar
+{
+    width: 110px;
+    height: 150px;
+    border: 4px solid rgba(80, 244, 146, 0.4);
+    border-radius: 0px 0px 0px 30px;
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+
+body
+{
+    background-color: #2D2828;
+    overflow: none;
+    padding: 5px;
+}

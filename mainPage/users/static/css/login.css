@@ -1,0 +1,81 @@
+.btn.btn-outline-info
+     {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        color: #000000;
+        background: #62DB92;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.23);
+        border: none;
+     }
+     .content-section
+     {
+         display: none;
+         margin-top: 10px;
+         margin-left: auto;
+         margin-right: auto;
+         box-sizing: border-box;
+
+        position: relative;
+        width: 40%;
+        height: 45%;
+
+        background: #2D2828;
+        border: 6px solid #50F492;
+        padding: 2%;
+        opacity: 0;
+        animation: ani 1s forwards;
+     }
+     .textinput.form-control, .passwordinput.form-control
+     {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        color: #000000;
+
+        background: rgba(80, 244, 146, 0.4);
+        border: 2px solid #50F492;
+     }
+     .border-bottom.mb-4
+     {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+        justify-content: space-between;
+     }
+     .requiredfield
+     {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 15px;
+        /* identical to box height, or 62% */
+
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+     }
+     @keyframes ani
+     {
+        0% {opacity: 0;}
+        100% {opacity: 1;
+     }

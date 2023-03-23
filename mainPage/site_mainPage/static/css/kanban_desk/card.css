@@ -1,0 +1,44 @@
+.border_p
+{
+    margin: 10px;
+    border: 1px solid #50F492;
+    display: flex;
+    flex: row
+}
+.header_p
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    color: #000000;
+    margin: 0 5%;
+    color: black;
+    padding-bottom: 4px;
+    background-color: #C4D45C;
+}
+.body_p
+{
+    margin: 0 5%;
+    background-color: transperent;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+
+    color: white;
+}
+
+.card_hover
+{
+    cursor: pointer;
+}
+.card_hover:hover
+{
+    border: 2px solid #50F492;
+}

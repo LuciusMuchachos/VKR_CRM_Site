@@ -1,0 +1,86 @@
+.side_bar_menu
+{
+    background: #2d2828;
+    border: 5px solid #62db92;
+    border-radius: 50px 0px 0px 50px;
+    padding: 2%;
+    width: 20%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    opacity: 0;
+    animation: ani 1s forwards;
+    z-index: 1;
+}
+
+.span_header
+{
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 35px;
+    /* or 97% */
+
+    text-transform: uppercase;
+
+    color: #62db92;
+}
+
+.menu_text
+{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* or 175% */
+
+    text-transform: uppercase;
+
+    color: #ffffff;
+    padding-left: 5%;
+}
+
+.menu_img
+{
+    border: 2px solid green;
+    width: 48px;
+    height: 48px;
+}
+
+.menu_holder
+{
+    display: flex;
+    flex: row;
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+@keyframes ani
+{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.open-button
+{
+    background-color: green;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    z-index: 1;
+}
+
+.close_button
+{
+    color: red;
+}

@@ -1,0 +1,5 @@
+{% load static %}
+<script type="text/javascript" src="{% static 'js/open_login.js' %}"></script>
+{% load crispy_forms_tags %}
+    {% include "users/login.html" %}
+<button onclick="openForm()">Show authorization form</button>

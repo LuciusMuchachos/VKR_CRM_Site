@@ -1,0 +1,19 @@
+{% load static %}
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{% static 'css/kanban_desk/card.css' %}" />
+</head>
+<body>
+<div class="card_hover" style="cursor: pointer">
+<p class="border_p">
+    <p class="header_p">
+        {{ card.title }}
+    </p>
+    <p class="body_p">
+        {{ card.content }}
+        <br>
+        {{ card.url }}
+    </p>
+</p>
+</div>
+</body>

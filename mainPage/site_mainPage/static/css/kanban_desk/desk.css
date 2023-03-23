@@ -1,0 +1,37 @@
+.header_h
+{
+    border-bottom: 4px dashed #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    offset-parent: 5px;
+}
+.card_handler
+{
+    margin: auto;
+    width: 90%;
+    overflow: auto;
+    overflow-color: green
+}
+.group_body:not(:first-child)
+{
+    margin-left: 10px;
+    offset-parent: 5px;
+}
+.group_body
+{
+    offset-parent: 5px;
+    text-align: center;
+    border: 4px dashed #FFFFFF;
+    width: 20%;
+    padding: 1%;
+    color: white;
+    margin: 1%;
+    overflow: auto;
+    min-height: 150px;
+}

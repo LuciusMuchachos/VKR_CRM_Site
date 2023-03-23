@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{% static 'css/kanban_desk/kanban_desk.css' %}" />
+    <script type="text/javascript" src="{% static 'js/open_menu.js' %}"></script>
+    <title>kanban-desk</title>
+</head>
+<header>
+    <h1>Панель заказов</h1>
+</header>
+<body>
+<img src="{% static 'images/forest.jpg' %}" class="avatar" onclick="openForm_menu()" style="cursor: pointer">
+<div id="blur_time">
+<div class="cards">
+    <div class="page_borders">Панель заказов</div>
+    <div class="page_borders">Настройки</div>
+    <div class="page_borders">Загрузка сотрудников</div>
+</div>
+<nav class="border">
+    {% for item in work_name %}
+        {% include "kanban_desk/desk.html" with stats="item" %}
+    {% endfor %}
+</nav>
+</div>
+{% include "sidebar_menu/sidebar_menu.html" %}
+</body>
+{% include "order_card/order_card.html" with stats="work_name" %}
+<footer>
+    {% for card in order_Card.all %}}
+        <p>{{ card.title }}</p>
+    {% endfor %}
+</footer>
+</html>
