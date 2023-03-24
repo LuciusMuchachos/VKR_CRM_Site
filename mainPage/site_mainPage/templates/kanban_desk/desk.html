@@ -1,5 +1,4 @@
 {% load static %}
-{% load holder %}
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="{% static 'css/kanban_desk/desk.css' %}" />
@@ -10,7 +9,7 @@
                 {{item}}
             </h2>
     <div class="card_handler" onclick="openForm()">
-        {% for card in order_Cards %}
+        {% for card in order_Cards.objects.all %}
             {% include "kanban_desk/card.html" %}
         {% endfor %}
     </div>
